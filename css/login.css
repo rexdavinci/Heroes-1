@@ -1,4 +1,5 @@
-body, html{
+body,
+html {
     font-family: 'Roboto', sans-serif;
     height: 100%;
     margin: 0;
@@ -12,7 +13,8 @@ body, html{
     /*-webkit-filter: blur(3px); !* Safari 6.0 - 9.0 *!*/
     /*filter: blur(3px);*/
 }
-.first-box{
+
+.first-box {
     background: rgba(34, 34, 34, 0.85);
     border-radius: 2px;
     box-sizing: border-box;
@@ -23,31 +25,35 @@ body, html{
     height: 60%;
     transform: translate(-50%, -50%);
 }
-.box-footer{
+
+.box-footer {
     margin-top: 80%;
 }
-.box-footer h4{
+
+.box-footer h4 {
     color: #CCCCCC;
     font-size: 16px;
     margin-left: 35px;
 }
-.box-footer span{
+
+.box-footer span {
     color: #CCCCCC;
     font-size: 12px;
     margin-left: 35px;
 }
-.box-footer .signup{
+
+.box-footer .signup {
     margin-left: 40%;
-border-radius: 2px;
+    border-radius: 2px;
     color: white;
-  width: 100px;
+    width: 100px;
     font-size: 13px;
     cursor: pointer;
     height: 25px;
     background: rgba(34, 34, 34, 0.85);
 }
 
-.login-box{
+.login-box {
     background-color: #F9F9F9;
     width: 480px;
     height: 480px;
@@ -57,19 +63,22 @@ border-radius: 2px;
     top: -10%;
 }
 
-.logo{
+.logo {
     width: 90px;
     height: 90px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.login-form{
+
+.login-form {
     margin-top: 50px;
     margin-left: 35px;
     color: #CCCCCC;
 }
-.login-form input[type="text"], input[type="password"] {
+
+.login-form input[type="text"],
+input[type="password"] {
     border: none;
     letter-spacing: 2px;
     background: transparent;
@@ -77,16 +86,18 @@ border-radius: 2px;
     width: 80%;
     border-bottom: 1px solid #CCCCCC;
 }
-.check{
+
+.check {
     margin-top: 50px;
     margin-left: 35px;
 }
 
-.check p{
+.check p {
     font-size: 16px;
     color: #CCCCCC;
 }
-.log{
+
+.log {
     background: #E8716D;
     border-radius: 3px;
     font-size: 12px;
@@ -100,36 +111,49 @@ border-radius: 2px;
     border: none;
 }
 
-.social-icon{
+.log:disabled {
+    background: darkgray;
+    cursor: pointer;
+}
+
+.log:active {
+    cursor: pointer;
+    background: #E8716D;
+}
+
+.social-icon {
     margin-left: 35px;
     margin-top: 40px;
 }
-.social-icon p{
+
+.social-icon p {
     font-size: 16px;
     color: #CCCCCC;
 }
-.social-icon ul{
+
+.social-icon ul {
     list-style: none;
     margin-left: -40px;
 }
-.social-icon ul li{
+
+.social-icon ul li {
     display: inline-block;
 }
-.social-icon li img{
-    width:30px;
+
+.social-icon li img {
+    width: 30px;
     height: 30px;
 }
 
-.center > img {
-    width:5px;
+.center>img {
+    width: 5px;
     height: 10px;
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
 
-
-.footer{
+.footer {
     position: fixed;
     font-size: 14px;
     font-weight: 500;
@@ -138,4 +162,19 @@ border-radius: 2px;
     width: 100%;
     color: white;
     text-align: center;
+}
+
+
+/* Validation styles */
+
+.val_error p {
+    color: #E8716D !important;
+}
+
+.wrong-input {
+    border-bottom: 1px solid red !important;
+}
+
+.valid-input {
+    border-bottom: 1px solid green !important;
 }
