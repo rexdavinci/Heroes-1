@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Heroes Sign Page</title>
+
     <style>
         body, html{
             font-family: 'Roboto', sans-serif;
@@ -26,11 +27,11 @@
             left: 50%;
             position: absolute;
             width: 30%;
-            height: 60%;
+            height: 70%;
             transform: translate(-50%, -50%);
         }
         .box-footer{
-            margin-top: 80%;
+            margin-top: 100%;
         }
         .box-footer h4{
             color: #CCCCCC;
@@ -56,7 +57,7 @@
         .login-box{
             background-color: #F9F9F9;
             width: 480px;
-            height: 480px;
+            height: 620px;
             border-radius: 2px;
             position: absolute;
             left: 7%;
@@ -104,6 +105,7 @@
             left: 0px;
             top: 0px;
             border: none;
+            margin-bottom: 10px;
         }
 
         .social-icon{
@@ -146,6 +148,21 @@
             text-align: center;
         }
 
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        button[type="button"]:disabled {
+            cursor: not-allowed;
+            background: rgb(77, 74, 74) !important;
+        }
+
+        .disabled {
+            cursor: not-allowed;
+            background: #ccc !important;
+        }
+
     </style>
     <link rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Londrina+Shadow|Roboto&display=swap" rel="stylesheet">
@@ -159,23 +176,28 @@
             <h4 style="font-size: 18px; color: #E8716D; margin-left: 35px;">SIGN UP</h4>
 
             <form class="login-form">
-                <input type="text" placeholder="Full Name" name="name">
+                <input type="text" placeholder="Full Name" name="name" id="name" onkeyup="validateName()">
+                <div id="nameError" class="error" style="display: hidden;">&nbsp;</div>
                 <br>
+                <input type="text" placeholder="Email" name="email" id="email" onkeyup="validateEmail()">
+                <div id="emailError" class="error" style="visibility: hidden;">&nbsp;</div>
                 <br>
+                <input type="password" placeholder="password"name="password" id="password" onkeyup="validatePassword()" >
+                <div id="passwordError" class="error" style="visibility: hidden;">&nbsp;</div>
                 <br>
-                <input type="text" placeholder="Email" name="email">
-                <br>
-                <br>
-                <br>
-                <input type="password" placeholder="password"name="password" >
-            </form>
-            <div class="check">
-                <div class="row">
-                    <div class="col-md-6">
-                        <button class="log">SIGN UP</button>
+                <input type="password" placeholder="Confirm Password" name="password" id="confirmPassword" onkeyup="validateConfirmPassword()">
+                <div id="confirmPasswordError" class="error" style="visibility: hidden;">&nbsp;</div>
+
+
+                <div class="check">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="log" disabled id="submitBtn">SIGN UP</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
+
             <div class="social-icon">
                 <div class="row">
                     <div class="col-md-6">
@@ -203,6 +225,9 @@
         <h6>Copyright © 2019 Heroes Org. All rights reserved.</h6>
     </div>
 </div>
+
+<script src="../js/main.js"></script>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
