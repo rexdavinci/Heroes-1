@@ -6,7 +6,7 @@ body, html{
 
 .bg {
     /* The image used */
-    background: url("https://res.cloudinary.com/ddtech/image/upload/v1568622321/Team%20Heroes/page_background_vgks3h.png") no-repeat center;
+    background: url("https://res.cloudinary.com/ddtech/image/upload/v1568715140/Team%20Heroes/background_taugtm.png") no-repeat center;
     height: 100%;
     background-size: cover;
     /*-webkit-filter: blur(3px); !* Safari 6.0 - 9.0 *!*/
@@ -23,18 +23,30 @@ body, html{
     height: 60%;
     transform: translate(-50%, -50%);
 }
-
-.first-box h3{
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    color: #CCCCCC;
-    position: absolute;
-    width: 150px;
-    height: 46px;
-    left: 300px;
-    top: 300px;
+.box-footer{
+    margin-top: 80%;
 }
+.box-footer h4{
+    color: #CCCCCC;
+    font-size: 16px;
+    margin-left: 35px;
+}
+.box-footer span{
+    color: #CCCCCC;
+    font-size: 12px;
+    margin-left: 35px;
+}
+.box-footer .signup{
+    margin-left: 40%;
+border-radius: 2px;
+    color: white;
+  width: 100px;
+    font-size: 13px;
+    cursor: pointer;
+    height: 25px;
+    background: rgba(34, 34, 34, 0.85);
+}
+
 .login-box{
     background-color: #F9F9F9;
     width: 480px;
@@ -46,46 +58,67 @@ body, html{
 }
 
 .logo{
-    width: 80px;
-    height: 80px;
-    left: 240px;
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-form{
+    margin-top: 50px;
+    margin-left: 35px;
+    color: #CCCCCC;
+}
+.login-form input[type="text"], input[type="password"] {
+    border: none;
+    letter-spacing: 2px;
+    background: transparent;
+    outline: none;
+    width: 80%;
+    border-bottom: 1px solid #CCCCCC;
+}
+.check{
+    margin-top: 50px;
+    margin-left: 35px;
 }
 
-/*.first-box p{*/
-/*    color: #CCCCCC;*/
-/*    left: 300px;*/
-/*    top: 450px;*/
-/*    position: absolute;*/
-/*    font-weight: bold;*/
-/*    font-size: 10px;*/
-/*    line-height: 14px;*/
-/*}*/
+.check p{
+    font-size: 16px;
+    color: #CCCCCC;
+}
+.log{
+    background: #E8716D;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    border: none;
+}
 
-/*.first-box .sign-up{*/
-/*    color: #ffffff;*/
-/*    left: 300px;*/
-/*    border-radius: 2px;*/
-/*    width: 100px;*/
-/*    height: 25px;*/
-/*    padding: 5px;*/
-/*    border: 1px solid #ffffff;*/
-/*    background: rgba(34, 34, 34, 0.85);*/
-/*    top: 500px;*/
-/*    position: absolute;*/
-/*    font-weight: bold;*/
-/*    font-size: 10px;*/
-/*    line-height: 14px;*/
-/*}*/
-
-
-/*.login{*/
-/*    background: #F9F9F9;*/
-/*    position: absolute;*/
-/*    width: 300px;*/
-/*    height: 400px;*/
-/*    left: -70px;*/
-/*    top: -20px;*/
-/*}*/
+.social-icon{
+    margin-left: 35px;
+    margin-top: 40px;
+}
+.social-icon p{
+    font-size: 16px;
+    color: #CCCCCC;
+}
+.social-icon ul{
+    list-style: none;
+    margin-left: -40px;
+}
+.social-icon ul li{
+    display: inline-block;
+}
+.social-icon li img{
+    width:30px;
+    height: 30px;
+}
 
 .center > img {
     width:5px;

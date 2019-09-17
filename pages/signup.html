@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heroes Sign Page</title>
+    <style>
+        body, html{
+            font-family: 'Roboto', sans-serif;
+            height: 100%;
+            margin: 0;
+        }
+
+        .bground{
+            /* The image used */
+            background: url("https://res.cloudinary.com/ddtech/image/upload/v1568715140/Team%20Heroes/background_taugtm.png") no-repeat center;
+            height: 100%;
+            background-size: cover;
+            /*-webkit-filter: blur(3px); !* Safari 6.0 - 9.0 *!*/
+            /*filter: blur(3px);*/
+        }
+        .first-box{
+            background: rgba(34, 34, 34, 0.85);
+            border-radius: 2px;
+            box-sizing: border-box;
+            top: 45%;
+            left: 50%;
+            position: absolute;
+            width: 30%;
+            height: 60%;
+            transform: translate(-50%, -50%);
+        }
+        .box-footer{
+            margin-top: 80%;
+        }
+        .box-footer h4{
+            color: #CCCCCC;
+            font-size: 16px;
+            margin-left: 35px;
+        }
+        .box-footer span{
+            color: #CCCCCC;
+            font-size: 12px;
+            margin-left: 35px;
+        }
+        .box-footer .signup{
+            margin-left: 40%;
+            border-radius: 2px;
+            color: white;
+            width: 100px;
+            font-size: 13px;
+            cursor: pointer;
+            height: 25px;
+            background: rgba(34, 34, 34, 0.85);
+        }
+
+        .login-box{
+            background-color: #F9F9F9;
+            width: 480px;
+            height: 480px;
+            border-radius: 2px;
+            position: absolute;
+            left: 7%;
+            top: -10%;
+        }
+
+        .logo{
+            width: 90px;
+            height: 90px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .login-form{
+            margin-top: 50px;
+            margin-left: 35px;
+            color: #CCCCCC;
+        }
+        .login-form input[type="text"], input[type="password"] {
+            border: none;
+            letter-spacing: 2px;
+            background: transparent;
+            outline: none;
+            width: 80%;
+            border-bottom: 1px solid #CCCCCC;
+        }
+        .check{
+            margin-top: 40px;
+            margin-left: 60%;
+        }
+
+        .check p{
+            font-size: 16px;
+            color: #CCCCCC;
+        }
+        .log{
+            background: #E8716D;
+            border-radius: 3px;
+            font-size: 12px;
+            cursor: pointer;
+            color: #ffffff;
+            position: absolute;
+            width: 120px;
+            height: 30px;
+            left: 0px;
+            top: 0px;
+            border: none;
+        }
+
+        .social-icon{
+            margin-left: 35px;
+            margin-top: 50px;
+        }
+        .social-icon p{
+            font-size: 16px;
+            color: #CCCCCC;
+        }
+        .social-icon ul{
+            list-style: none;
+            margin-left: -40px;
+        }
+        .social-icon ul li{
+            display: inline-block;
+        }
+        .social-icon li img{
+            width:30px;
+            height: 30px;
+        }
+
+        .center > img {
+            width:5px;
+            height: 10px;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+
+        .footer{
+            position: fixed;
+            font-size: 14px;
+            font-weight: 500;
+            left: 0;
+            bottom: 15%;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Londrina+Shadow|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+<div class="bground">
+    <div class="first-box">
+        <div class="login-box">
+            <img src="https://res.cloudinary.com/ddtech/image/upload/v1568622070/Team%20Heroes/team_heroes_logo_y2hlv4.png" alt="team-logo" class="logo">
+            <h4 style="font-size: 18px; color: #E8716D; margin-left: 35px;">SIGN UP</h4>
+
+            <form class="login-form">
+                <input type="text" placeholder="Full Name" name="name">
+                <br>
+                <br>
+                <br>
+                <input type="text" placeholder="Email" name="email">
+                <br>
+                <br>
+                <br>
+                <input type="password" placeholder="password"name="password" >
+            </form>
+            <div class="check">
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="log">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icon">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Or Sign in Using:</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><img src="../icons/facebook.svg"></li>
+                            <li><img src="../icons/linkedin.svg"></li>
+                            <li><img src="../icons/twitter.svg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-footer">
+            <h4> Have an Account?</h4>
+            <span>A Member already.... Login here</span>
+            <a href="login.html">
+                <button class="signup">LOG IN</button>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <h6>Copyright © 2019 Heroes Org. All rights reserved.</h6>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</html>
