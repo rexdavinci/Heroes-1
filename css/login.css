@@ -19,8 +19,8 @@ body, html{
     top: 45%;
     left: 50%;
     position: absolute;
-    width: 60%;
-    height: 70%;
+    width: 30%;
+    height: 60%;
     transform: translate(-50%, -50%);
 }
 
@@ -33,44 +33,59 @@ body, html{
     width: 150px;
     height: 46px;
     left: 300px;
-    top: 400px;
+    top: 300px;
 }
-
-.first-box p{
-    color: #CCCCCC;
-    left: 300px;
-    top: 450px;
-    position: absolute;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 14px;
-}
-
-.first-box .sign-up{
-    color: #ffffff;
-    left: 300px;
+.login-box{
+    background-color: #F9F9F9;
+    width: 480px;
+    height: 480px;
     border-radius: 2px;
-    width: 100px;
-    height: 25px;
-    padding: 5px;
-    border: 1px solid #ffffff;
-    background: rgba(34, 34, 34, 0.85);
-    top: 500px;
     position: absolute;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 14px;
+    left: 7%;
+    top: -10%;
 }
 
-
-.login{
-    background: #F9F9F9;
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    left: -70px;
-    top: -20px;
+.logo{
+    width: 80px;
+    height: 80px;
+    left: 240px;
 }
+
+/*.first-box p{*/
+/*    color: #CCCCCC;*/
+/*    left: 300px;*/
+/*    top: 450px;*/
+/*    position: absolute;*/
+/*    font-weight: bold;*/
+/*    font-size: 10px;*/
+/*    line-height: 14px;*/
+/*}*/
+
+/*.first-box .sign-up{*/
+/*    color: #ffffff;*/
+/*    left: 300px;*/
+/*    border-radius: 2px;*/
+/*    width: 100px;*/
+/*    height: 25px;*/
+/*    padding: 5px;*/
+/*    border: 1px solid #ffffff;*/
+/*    background: rgba(34, 34, 34, 0.85);*/
+/*    top: 500px;*/
+/*    position: absolute;*/
+/*    font-weight: bold;*/
+/*    font-size: 10px;*/
+/*    line-height: 14px;*/
+/*}*/
+
+
+/*.login{*/
+/*    background: #F9F9F9;*/
+/*    position: absolute;*/
+/*    width: 300px;*/
+/*    height: 400px;*/
+/*    left: -70px;*/
+/*    top: -20px;*/
+/*}*/
 
 .center > img {
     width:5px;
@@ -81,16 +96,13 @@ body, html{
 }
 
 
-.form-group input {
-        outline: 0;
-        border-width: 0 0 2px;
-        border-color: grey;
-
-      input:focus {
-        border-color: green
-      }
-}
-
-.container {
-    padding-top: 60px;
+.footer{
+    position: fixed;
+    font-size: 14px;
+    font-weight: 500;
+    left: 0;
+    bottom: 15%;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
