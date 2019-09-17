@@ -16,11 +16,11 @@ body, html{
     background: rgba(34, 34, 34, 0.85);
     border-radius: 2px;
     box-sizing: border-box;
-    top: 50%;
+    top: 45%;
     left: 50%;
     position: absolute;
-    width: 50%;
-    height: 40%;
+    width: 60%;
+    height: 70%;
     transform: translate(-50%, -50%);
 }
 
@@ -30,16 +30,16 @@ body, html{
     line-height: 23px;
     color: #CCCCCC;
     position: absolute;
-    width: 139px;
+    width: 150px;
     height: 46px;
-    left: 45px;
-    top: 80px;
+    left: 300px;
+    top: 400px;
 }
 
 .first-box p{
     color: #CCCCCC;
-    left: 45px;
-    top: 135px;
+    left: 300px;
+    top: 450px;
     position: absolute;
     font-weight: bold;
     font-size: 10px;
@@ -48,14 +48,14 @@ body, html{
 
 .first-box .sign-up{
     color: #ffffff;
-    left: 45px;
+    left: 300px;
     border-radius: 2px;
     width: 100px;
     height: 25px;
     padding: 5px;
     border: 1px solid #ffffff;
     background: rgba(34, 34, 34, 0.85);
-    top: 200px;
+    top: 500px;
     position: absolute;
     font-weight: bold;
     font-size: 10px;
@@ -66,15 +66,31 @@ body, html{
 .login{
     background: #F9F9F9;
     position: absolute;
-    width: 350px;
-    height: 330px;
-    left: 0px;
-    top: 0px;
+    width: 300px;
+    height: 400px;
+    left: -70px;
+    top: -20px;
 }
 
-img {
-    width:50px;
-    height: 50px;
+.center > img {
+    width:5px;
+    height: 10px;
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+}
+
+
+.form-group input {
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: grey;
+
+      input:focus {
+        border-color: green
+      }
+}
+
+.container {
+    padding-top: 60px;
 }
