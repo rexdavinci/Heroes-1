@@ -14,12 +14,14 @@
           <img src="https://res.cloudinary.com/ddtech/image/upload/v1568622070/Team%20Heroes/team_heroes_logo_y2hlv4.png" alt="team-logo" class="logo">
             <h4 style="font-size: 18px; color: #E8716D; margin-left: 35px;">LOG IN</h4>
 
-            <form class="login-form">
+            <form class="login-form" name="v-form" method="post" onsubmit="return Validate()">
                 <input type="text" placeholder="Email" name="email">
+                <div id="email_error" class="val_error"></div>
                 <br>
                 <br>
                 <br>
                 <input type="password" placeholder="password"name="password" >
+                <div id="password_error" class="val_error"></div>
             </form>
             <div class="check">
                 <div class="row">
@@ -57,6 +59,26 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+   var email = document.forms["v-forms"]["email"];
+   var password = document.forms["v-forms"]["password"];
+
+
+   var email_error = document.getElementById("email_error");
+   var password_error = document.getElementById("password_error");
+
+   email.addEventListener('blur', emailVerify, true);
+   password.addEventListener('blur', passwordVerify, true);
+   
+   function validate() {
+       if (email.value == ""){
+           email.style.border = "1px solid red";
+           email_error.textContent = "email is required";
+           email.focus();
+           return false;
+       }
+   }
+</script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
