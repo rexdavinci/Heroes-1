@@ -12,72 +12,59 @@
 </head>
 
 <body>
-    <div class="bg">
-        <div class="first-box">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="signup">
-                        <div class="logo">
-                            <img src="https://res.cloudinary.com/ddtech/image/upload/v1568622070/Team%20Heroes/team_heroes_logo_y2hlv4.png" class="center" alt="team_logo">
-
-                        </div>
-
-                        <form>
-
-                            <div class="form-group row">
-
-                                <div class="col-auto">
-                                    <input type="text" class="form-control" placeholder="Full Name " id="fullname" name="fullname">
-
-                                </div>
-
-                            </div>
-                            <hr>
-
-                            <div class="form-group row">
-
-                                <div class="col-xs-9">
-                                    <input type="text" class="form-control" id="email" placeholder="Email" name="email">
-                                </div>
-
-                            </div>
-                            <hr>
-                            <div class="form-group row">
-
-                                <div class="col-auto">
-                                    <input type="text" class="form-control " placeholder="Password" id="password" name="password">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="form-group row">
-
-                                <div class="col-xs-9">
-                                    <input type="text" class="form-control " placeholder="Confirm Password" id="confirmpassword" name="confirmpassword">
-
-                                </div>
-
-                            </div>
-                            <hr>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="terms">
-                                <label class="form-check-label" for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
-                            </div>
-                            <div class="form-group row float-right">
-                                <div class="offset-xs-3 col-xs-9 ">
-                                    <button type="submit" class="btn btn-primary" style="background-color: #E8716D; border-color:#E8716D; ">Sign
-                                        Up</button>
-                                </div>
-                            </div>
-
-                        </form>
+    <div class="bg"></div>
+    <div class="first-box">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="signup">
+                    <div class="logo">
+                        <img src="https://res.cloudinary.com/ddtech/image/upload/v1568622070/Team%20Heroes/team_heroes_logo_y2hlv4.png" class="center" alt="team_logo">
 
                     </div>
+                    <form name="sign-up" action="register.php" method="post">
+
+                        <div class="form-group row">
+                            <div class="col-auto">
+                                <input type="text" class="form-control" placeholder="Full Name " id="fullname" name="fullname">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group row">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group row">
+                            <div class="col-auto">
+                                <input type="text" class="form-control " placeholder="Password" id="password" name="password">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group row">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control " placeholder="Confirm Password" id="confirmpassword" name="confirmpassword">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="terms">
+                            <label class="form-check-label" for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                        </div>
+                        <div class="form-group row float-right">
+                            <div class="offset-xs-3 col-xs-9 ">
+                                <input type="submit" name="btn-sign-up" class="btn btn-primary" style="background-color: #E8716D; border-color:#E8716D;" value="Sign Up">
+                                <!--<button type="submit" class="btn btn-primary" style="background-color: #E8716D; border-color:#E8716D; ">Sign Up</button>-->
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </div>
-            <!-- Login Text Block-->
-
         </div>
-
+        <!-- Login Text Block-->
 
     </div>
 </body>

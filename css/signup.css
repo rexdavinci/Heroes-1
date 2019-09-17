@@ -1,124 +1,124 @@
-    body,
-    html {
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-        margin: 0;
-    }
-    
-    .bg {
-        /* The image used */
-        background: url("https://res.cloudinary.com/ddtech/image/upload/v1568622321/Team%20Heroes/page_background_vgks3h.png") no-repeat center;
-        height: 100%;
-        background-size: cover;
-        /*-webkit-filter: blur(3px); !* Safari 6.0 - 9.0 *!*/
-        /*filter: blur(3px);*/
-    }
-    
-    .first-box {
-        background: rgba(34, 34, 34, 0.85);
-        border-radius: 2px;
-        box-sizing: border-box;
-        top: 50%;
-        left: 50%;
-        position: absolute;
-        width: 40%;
-        height: 80%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .first-box h3 {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        color: #CCCCCC;
-        position: absolute;
-        width: 139px;
-        height: 46px;
-        left: 45px;
-        top: 80px;
-    }
-    
-    .first-box p {
-        color: #CCCCCC;
-        left: 45px;
-        top: 135px;
-        position: absolute;
-        font-weight: bold;
-        font-size: 10px;
-        line-height: 14px;
-    }
-    
-    .first-box .sign-up {
-        color: #ffffff;
-        left: 45px;
-        border-radius: 2px;
-        width: 100px;
-        height: 25px;
-        padding: 5px;
-        border: 1px solid #ffffff;
-        background: rgba(34, 34, 34, 0.85);
-        top: 200px;
-        position: absolute;
-        font-weight: bold;
-        font-size: 10px;
-        line-height: 14px;
-    }
-    
-    .signup {
-        background: #F9F9F9;
-        position: relative;
-        width: 450px;
-        height: 530px;
-        top: -40px;
-        left: 18%;
-    }
-    
-    .logo {
-        width: 20%;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        padding-bottom: 10%;
-    }
-    
-    img {
-        width: 100%;
-    }
-    /* Signup page Style **/
-    
-    input.form-control {
-        background-color: rgba(0, 0, 0, 0) !important;
-        border: none !important;
-        display: inline-block;
-        font-family: Roboto;
-        width: 100%;
-        margin-left: -1em;
-    }
-    
-    form {
-        width: 70%;
-        margin: auto;
-        font-family: Roboto;
-    }
-    
-    form hr {
-        margin-top: -1em;
-        margin-left: -1em;
-        border: 0;
-        border-top: 1px solid #CCCCCC;
-    }
-    
-    .form-check-label {
-        font-family: Roboto;
-    }
-    
-    .social-signup i {
-        float: right;
-        border: 1px solid #1877F2;
-        background-color: #1877F2;
-        border-radius: 50%;
-        font-size: 2em;
-        padding: 5px;
-        color: #ffffff;
-        margin: 0px;
-    }
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background: url("https://res.cloudinary.com/ddtech/image/upload/v1568622321/Team%20Heroes/page_background_vgks3h.png") no-repeat center;
+    height: 100%;
+    background-size: cover;
+    webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.first-box {
+    background: rgba(34, 34, 34, 0.85);
+    border-radius: 2px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.first-box h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #CCCCCC;
+    position: absolute;
+    width: 139px;
+    height: 46px;
+    left: 45px;
+    top: 80px;
+}
+
+.first-box p {
+    color: #CCCCCC;
+    left: 45px;
+    top: 135px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.first-box .sign-up {
+    color: #ffffff;
+    left: 45px;
+    border-radius: 2px;
+    width: 100px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    background: rgba(34, 34, 34, 0.85);
+    top: 200px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.signup {
+    background: #F9F9F9;
+    position: relative;
+    width: 450px;
+    height: 530px;
+    top: -40px;
+    left: 18%;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+img {
+    width: 100%;
+}
+/* Signup page Style **/
+
+input.form-control {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    display: inline-block;
+    font-family: Roboto;
+    width: 100%;
+    margin-left: -1em;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+    font-family: Roboto;
+}
+
+form hr {
+    margin-top: -1em;
+    margin-left: -1em;
+    border: 0;
+    border-top: 1px solid #CCCCCC;
+}
+
+.form-check-label {
+    font-family: Roboto;
+}
+
+.social-signup i {
+    float: right;
+    border: 1px solid #1877F2;
+    background-color: #1877F2;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 5px;
+    color: #ffffff;
+    margin: 0px;
+}
