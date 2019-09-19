@@ -1,0 +1,30 @@
+{
+   "users": [
+      {
+         "name": "Adegeye Adetunji",
+         "email": "adetunjiincolet@gmail.com",
+         "password": "51e542848b28382dc08e11124a890b19"
+      },
+      {
+         "name": "Fadairo Oluwamayowa",
+         "email": "oluwamayowaf@yahoo.com",
+         "password": "51e542848b28382dc08e11124a890b19"
+      },
+      {
+         "name": "Adekoyejo Adeola",
+         "email": "adeolaadekoyejo@gmail.com",
+         "password": "c1fd40d7ffaededb542a48c3432097fb"
+      },
+      {
+         "name": "Adegeye Adetunji Solomon",
+         "email": "tunjiincolet@gmail.com",
+         "password": "c094ce055024b2d9312c261863f06689"
+      },
+      {
+         "id": 0.792992687564658,
+         "name": "abc mister",
+         "email": "abc@123.com",
+         "password": "1221ad8321600541e4113fc4ebc581b0"
+      }
+   ]
+}

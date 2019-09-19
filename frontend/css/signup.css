@@ -1,0 +1,240 @@
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    /* The image used */
+    background: url("https://res.cloudinary.com/ddtech/image/upload/v1568715140/Team%20Heroes/background_taugtm.png") no-repeat center;
+    height: auto;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1.5fr;
+    margin: auto;
+    border: #E8716D;
+    justify-content: space-around;
+    align-content: center;
+    /*-webkit-filter: blur(3px); !* Safari 6.0 - 9.0 *!*/
+    /*filter: blur(3px);*/
+}
+
+.first-box {
+    width: 100%;
+    grid-row: 2;
+    grid-column: 2 /3;
+    background-color: rgba(34, 34, 34, 0.85);
+    border-radius: 2px;
+    /*top: 45%;
+    left: 50%;
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    transform: translate(-50%, -50%);*/
+}
+
+.box-footer {
+    grid-row: 3;
+    grid-column: 2/3;
+    border-radius: 2px;
+    background-color: rgba(34, 34, 34, 0.85);
+}
+
+.box-footer h4 {
+    color: #CCCCCC;
+    font-size: 20px;
+    padding-top: 2em;
+}
+
+.box-footer span {
+    color: #CCCCCC;
+    font-size: 12px;
+}
+
+.box-footer button {
+    background: rgba(34, 34, 34, 0.85);
+    border: 0.5px solid #CCCCCC;
+    width: 120px;
+    color: #cccccc;
+    font-size: 13px;
+    cursor: pointer;
+    height: 25px;
+    padding: 0.3em 1.2em;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    text-align: center;
+}
+
+.box-footer a.hover {
+    text-decoration: none;
+}
+
+.box-footer-text {
+    padding: 0 20%;
+}
+
+.login-box {
+    display: block;
+    background-color: #F9F9F9;
+    margin: -5% auto 0%;
+    width: 450px;
+    height: 430px;
+    border-radius: 2px;
+    /*position: absolute;
+    left: 7%;
+    top: -10%;*/
+}
+
+.logo {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.login-form-box {
+    display: block;
+    width: 100%;
+    color: #CCCCCC;
+    margin: auto;
+}
+
+.login-form {
+    padding: 5% 10%;
+    color: #CCCCCC;
+    margin: auto;
+}
+
+.form-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #E8716D;
+    padding-bottom: 2em;
+}
+
+.login-form input[type="text"],
+input[type="password"] {
+    display: inline-block;
+    border: none;
+    letter-spacing: 2px;
+    background: transparent;
+    outline: none;
+    width: 90%;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+
+/*
+.check {
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+.check p {
+    font-size: 16px;
+    color: #CCCCCC;
+}*/
+
+.log:disabled {
+    background: #E8716D;
+    cursor: not-allowed;
+}
+
+.log {
+    background: #E8716D;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    width: 120px;
+    height: 30px;
+    border: none;
+    float: right;
+}
+
+.social-icon {
+    display: none;
+    float: right;
+    margin-left: 35px;
+    margin-top: 40px;
+}
+
+.social-icon p {
+    float: left;
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+.social-icon ul {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.social-icon ul li {
+    display: inline-block;
+}
+
+.social-icon li img {
+    width: 40px;
+    height: 40px;
+}
+
+.center>img {
+    width: 5px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+footer {
+    /*position: fixed;
+    font-size: 14px;
+    font-weight: 500;
+    left: 0;
+    bottom: 15%;
+    width: 100%;*/
+    color: white;
+    text-align: center;
+}
+
+
+/* Validation styles */
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+button[type="button"]:disabled {
+    cursor: not-allowed;
+    background: #E8716D !important;
+}
+
+.disabled {
+    background: #E8716D !important;
+}
+
+.wrong-input {
+    border-bottom: 1px solid red !important;
+}
+
+.valid-input {
+    border-bottom: 1px solid green !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .box-footer-text {
+        padding: 0 5%;
+    }
+    .login-box {
+        min-height: 500px;
+    }
+}
